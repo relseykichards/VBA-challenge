@@ -11,8 +11,9 @@ Dim yearlyChange As Double
 Dim percentChange As Double
 Dim yearlyClosingPrice As Double
 
-Dim lastRow As Integer
-lastRow = Cells(RowCount, 1).End(xlUp).Row
+Dim lastRow As Long
+
+lastRow = Cells(Rows.Count, 1).End(xlUp).Row
 
 For i = 2 To lastRow
 
@@ -62,3 +63,4 @@ With yearlyChangeRed
 End With
 
 End Sub
+
